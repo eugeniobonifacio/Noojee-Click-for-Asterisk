@@ -40,7 +40,7 @@ Dial: function ()
 		theApp.notification.getInstance().show(
 			'img/call.png',
 			"Dialing: " + phoneNo,
-			'Close this notification to hang-up immediately.',
+			' ',
 			function() { theApp.asterisk.getInstance().hangup(); }
 		);
 				

@@ -254,7 +254,8 @@ noojeeClick.ns(function()
 		    resetIcon : function()
 		    {
 				 theApp.util.debug("noojeeclick", "resetIcon");
-				 chrome.browserAction.setBadgeText({text:""});
+				 //No badge to set text on.
+				 //chrome.browserAction.setBadgeText({text:""});
 		    },
 
 		    onDialDifferentlyShowing : function(menu)
