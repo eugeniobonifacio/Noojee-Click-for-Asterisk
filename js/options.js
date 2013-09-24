@@ -18,7 +18,8 @@
  * You should have received a copy of the GNU General Public License along 
  * with Noojee Click. If not, see http://www.gnu.org/licenses/.
  **/
-// Removes all options from storage
+ 
+ // Removes all options from storage
 function clearStorage() {
 	for (var key in localStorage) {
 		localStorage.removeItem(key);
@@ -213,3 +214,5 @@ $(function() {
 			});
 		});
 	});
+	
+document.addEventListener('DOMContentLoaded', restore_options);

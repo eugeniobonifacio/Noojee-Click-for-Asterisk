@@ -1,7 +1,6 @@
 {
 	"manifest_version": 2,
 	"name" : "Noojee Click for Asterisk",
-	"short_name" : "NoojeeClick",
 	"version" : "0.91",
 	"author"  : "Noojee.com.au, adapted by Chris Terry",
 	
