@@ -81,18 +81,18 @@ Dial: function ()
 		// will drop the call if it contains non-digits.
 		// The CALLERID(Name) is set for sip phones that can display text (I think this might work)
 		// 
-		url += "&Variable=CALLERID(Num)=" + normalised; // Hopefully sets the handsets display 
-		url += "&Variable=CALLERID(Name)=" + phoneNo + "-NoojeeClick";  //and this as well.
+		//url += "&Variable=CALLERID(Num)=" + normalised; // Hopefully sets the handsets display 
+		//url += "&Variable=CALLERID(Name)=" + phoneNo + "-NoojeeClick";  //and this as well.
 
 		// If the user has configured the callerId then lets set it.
 		// We try to control the callerID that is presented to the 
 		// far end by setting CALLERID(Num).
-		var callerID = theApp.prefs.getValue("callerId");
-		if (callerID != null)
-		{
-			url += "&CallerId=" + callerID;
-		}
-		else 
+		//var callerID = theApp.prefs.getValue("callerId");
+		//if (callerID != null)
+		//{
+		//	url += "&CallerId=" + callerID;
+		//}
+		//else 
 			url += "&CallerId=" + normalised; // no caller id so we like to display the number we dialling
 												// on the users handset.
 
