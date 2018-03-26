@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
 	"name" : "Noojee Click for Asterisk",
-	"version" : "0.91",
-	"author"  : "Noojee.com.au, adapted by Chris Terry",
+	"version" : "0.92",
+	"author"  : "Noojee.com.au, adapted by Chris Terry (fixed by Eugenio Bonifacio)",
 	
 	"description" : "Turns phone numbers in any web page into click-to-dial links.",
 	"icons" : {
