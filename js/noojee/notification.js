@@ -48,9 +48,12 @@ noojeeClick.ns(function()
 					theApp.util.debug("notification", "Showing " + title);
 
 					this.hide();
-					this.curnotification = window.webkitNotifications.createNotification(icon,title,text);
+					this.curnotification = new Notification(title, {
+					  'icon':icon,
+					  'body':text
+					}); //.Notifications.createNotification(icon,title,text);
 					this.curnotification.onclose = onCloseHandler;
-					this.curnotification.show();
+					//this.curnotification.show();
 				},
 
 				/**
@@ -59,8 +62,8 @@ noojeeClick.ns(function()
 				this.hide = function()
 				{
 					if(this.curnotification) {
+						this.curnotification.close();
 						this.curnotification.onclose = null;
-						this.curnotification.cancel();
 						this.curnotification = null;
 					}
 				}
