@@ -74,8 +74,8 @@ chrome.extension.onRequest.addListener(
 	}
 );
 
-chrome.extension.getViews({type:"notification"}).forEach(function(win) {
+/*chrome.extension.getViews({type:"notification"}).forEach(function(win) {
   alert('here');
-});
+});*/
 
 noojeeClick.initialize();
